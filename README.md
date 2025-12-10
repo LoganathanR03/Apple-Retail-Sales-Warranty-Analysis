@@ -12,7 +12,7 @@ The analysis is based on five interconnected tables:
 | Table | Description | Primary Key | Key Columns |
 |---|---|---|---|
 | category | Product groupings. | category_id | category_name |
-| products | Product details and pricing. | Product_ID | Product_Name, Price, category_id (FK) |
+| products | Product details and pricing. | Product_ID | Product_Name, Price, category_id (FK), launch_date |
 | sales | Transactional sales records. | sale_id | sale_date, store_id (FK), product_id (FK), quantity |
 | stores | Store locations and names. | Store_ID | Store_Name, City, Country |
 | warranty | Product warranty claim details. | claim_id | claim_date, sale_id (FK), repair_status |
