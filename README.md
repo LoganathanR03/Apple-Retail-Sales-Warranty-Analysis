@@ -1,8 +1,12 @@
-💻 Apple Retail Sales & Warranty Analysis SQL Project
-Overview
+# 💻 Apple Retail Sales & Warranty Analysis SQL Project
+
+### Overview
+
 This project is a comprehensive analysis of a retail dataset covering sales, products, stores, categories, and warranty claims. The goal is to derive actionable business intelligence by examining key performance indicators (KPIs) across four major domains: Sales & Revenue, Product & Category Insights, Store Performance, and Warranty & Quality.
 The entire analysis was performed using SQL, including advanced techniques like Window Functions (e.g., LAG, RANK) and Common Table Expressions (CTEs) for complex calculations like monthly growth rate and claim ratios.
-📂 Dataset Schema
+
+### 📂 Dataset Schema
+
 The analysis is based on five interconnected tables:
 | Table | Description | Primary Key | Key Columns |
 |---|---|---|---|
@@ -11,13 +15,17 @@ The analysis is based on five interconnected tables:
 | sales | Transactional sales records. | sale_id | sale_date, store_id (FK), product_id (FK), quantity |
 | stores | Store locations and names. | Store_ID | Store_Name, City, Country |
 | warranty | Product warranty claim details. | claim_id | claim_date, sale_id (FK), repair_status |
-🛠️ Methodology and Data Cleaning
+
+### 🛠️ Methodology and Data Cleaning
+
  * Initial Schema Review: Identified relationships and key metrics for analysis.
  * Data Quality Check: A rigorous check was performed on all core tables.
    * Null Value Handling: Verified and confirmed no NULL values in all primary key columns and critical foreign key columns.
    * Duplicate Handling: Verified and confirmed no duplicate entries based on primary keys across all tables.
  * Advanced Analysis: Employed complex SQL logic to calculate derived metrics (e.g., sales growth percentage, claim rate, average time-to-claim).
-🎯 Key Analysis Areas & Insights
+
+### 🎯 Key Analysis Areas & Insights
+
 The project is structured around 20 specific business questions grouped into four major areas.
 1. Sales & Revenue Analysis
 | Q | Analysis Question | Key Insight Metric |
