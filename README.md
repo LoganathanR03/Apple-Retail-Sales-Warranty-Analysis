@@ -8,6 +8,7 @@ The entire analysis was performed using SQL, including advanced techniques like 
 ### 📂 Dataset Schema
 
 The analysis is based on five interconnected tables:
+
 | Table | Description | Primary Key | Key Columns |
 |---|---|---|---|
 | category | Product groupings. | category_id | category_name |
@@ -28,6 +29,7 @@ The analysis is based on five interconnected tables:
 
 The project is structured around 20 specific business questions grouped into four major areas.
 1. Sales & Revenue Analysis
+
 | Q | Analysis Question | Key Insight Metric |
 |---|---|---|
 | 1 | Top 5 products by revenue in the last year. | Total Revenue |
@@ -38,6 +40,7 @@ The project is structured around 20 specific business questions grouped into fou
 > Potential Insight: Identifying the top revenue generators helps in inventory planning and marketing focus. Analyzing monthly growth rates highlights underperforming or rapidly scaling stores.
 > 
 2. Product & Category Insights
+   
 | Q | Analysis Question | Key Insight Metric |
 |---|---|---|
 | 6 | Products that have never been sold since launch. | Unsold Products List |
@@ -48,6 +51,7 @@ The project is structured around 20 specific business questions grouped into fou
 > Potential Insight: A high average claim count in a category (Q9) suggests systemic quality issues that need R&D attention, while Q8 identifies premium/niche products.
 > 
 3. Store Performance
+
 | Q | Analysis Question | Key Insight Metric |
 |---|---|---|
 | 11 | Rank stores by sales per city. | RANK() over City Partition |
@@ -58,6 +62,7 @@ The project is structured around 20 specific business questions grouped into fou
 > Potential Insight: High Claim Ratio (Q13) highlights poor quality assurance at specific locations, while diversity (Q15) indicates successful regional merchandising.
 > 
 4. Warranty & Quality Analysis
+
 | Q | Analysis Question | Key Insight Metric |
 |---|---|---|
 | 16 | Average time gap between sale date and claim date. | AVG(DATEDIFF) in Days/Months |
